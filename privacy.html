@@ -81,6 +81,19 @@
     </div>
 
     <div class="container">
+        <div class="card" style="background:#F5F3FF; border:1px solid #D4BBFB;">
+            <h2>📊 Google Play 데이터 보안 요약</h2>
+            <p>Google Play Console의 "데이터 보안(Data Safety)" 양식과 1:1로 매핑되는 요약입니다.</p>
+            <ul>
+                <li><strong>수집:</strong> 이메일, 이름, 프로필 사진, 일기 내용, 감정 데이터, 광고 ID, IP, 기기 정보</li>
+                <li><strong>공유:</strong> 일기 내용 → OpenAI (AI 감정 분석, 최대 30일 보관 후 삭제, 학습 미사용) / 광고 ID·IP → Google AdMob</li>
+                <li><strong>데이터 판매(Sell): 없음</strong></li>
+                <li><strong>전송 구간 암호화:</strong> HTTPS/TLS 1.2 이상</li>
+                <li><strong>데이터 삭제 요청:</strong> 앱 내 <strong>[설정 → 회원탈퇴]</strong> 또는 <a href="mailto:pung0805@gmail.com" style="color:#667eea;">pung0805@gmail.com</a></li>
+                <li><strong>대상 연령:</strong> 만 13세 이상 일반 이용자 (Google Play Families 정책 비대상)</li>
+            </ul>
+        </div>
+
         <div class="card">
             <h2>1. 개인정보의 수집 및 이용 목적</h2>
             <p>오늘감정(이하 "앱")은 다음의 목적을 위해 개인정보를 수집 및 이용합니다:</p>
@@ -105,6 +118,22 @@
                 <li>태그 정보</li>
                 <li>서비스 이용 기록</li>
             </ul>
+
+            <h3>제3자 SDK가 자동 수집하는 정보</h3>
+            <ul>
+                <li><strong>Google AdMob:</strong> 광고 식별자(AAID/IDFA), IP 주소, 기기 정보, 앱 사용 이벤트</li>
+                <li><strong>OpenAI:</strong> AI 감정 분석·요약을 위해 일기 내용을 전송 (최대 30일 보관 후 삭제, 모델 학습에 사용되지 않음)</li>
+            </ul>
+
+            <h3>수집하지 않는 정보 (최소 수집 원칙)</h3>
+            <ul>
+                <li><strong>민감정보:</strong> 주민등록번호, 신용카드, 계좌번호, 생체정보, 건강·종교·정치 정보</li>
+                <li><strong>통신 데이터:</strong> 전화번호, SMS, 통화 기록, 연락처(주소록)</li>
+                <li><strong>하드웨어 식별자:</strong> IMEI, MAC 주소, 시리얼 번호 (Google의 재설정 가능한 광고 ID만 사용)</li>
+                <li><strong>정밀 위치:</strong> GPS, Wi-Fi 기반 정밀 위치</li>
+                <li><strong>기기 내 파일:</strong> 갤러리 사진 스캔, 다운로드 폴더, 타 앱 데이터, 설치된 앱 목록</li>
+                <li><strong>실시간 입력:</strong> 마이크, 카메라, 키 입력, 화면 캡처</li>
+            </ul>
         </div>
 
         <div class="card">
@@ -117,11 +146,26 @@
         </div>
 
         <div class="card">
-            <h2>4. 개인정보의 제3자 제공</h2>
+            <h2>4. 개인정보의 제3자 제공 및 위탁</h2>
             <p>앱은 이용자의 개인정보를 원칙적으로 외부에 제공하지 않습니다. 다만, 아래의 경우에는 예외로 합니다:</p>
             <ul>
                 <li>이용자가 사전에 동의한 경우</li>
                 <li>법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우</li>
+            </ul>
+
+            <h3>개인정보 처리 위탁 현황</h3>
+            <ul>
+                <li><strong>Google LLC (AdMob):</strong> 광고 식별자·IP·앱 이벤트 — 광고 게재 및 효과 측정</li>
+                <li><strong>OpenAI, L.L.C.:</strong> 일기 내용 — AI 감정 분석·위로 메시지·요약 (최대 30일 보관 후 삭제, 모델 학습 미사용)</li>
+                <li><strong>Google LLC (Firebase / 구글 로그인):</strong> 이메일·이름·프로필 URL·OAuth 식별자 — 인증 및 회원 관리</li>
+            </ul>
+
+            <h3>광고 서비스 (Google AdMob)</h3>
+            <p>본 앱은 <strong>Google AdMob</strong>을 통해 광고를 게재합니다. 이용자는 기기 설정의 "광고 ID 재설정/삭제"(Android) 또는 "추적 허용" 해제(iOS)를 통해 맞춤형 광고를 제한할 수 있습니다.</p>
+            <ul>
+                <li><a href="https://support.google.com/admob/answer/9012903" target="_blank" style="color:#667eea;">Google 인증 광고 구매자 및 공급 파트너 목록</a></li>
+                <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" style="color:#667eea;">Google 파트너 사이트 및 앱의 정보 수집 방법</a></li>
+                <li><a href="https://policies.google.com/technologies/ads" target="_blank" style="color:#667eea;">Google 광고 정책</a></li>
             </ul>
         </div>
 
@@ -147,11 +191,12 @@
         </div>
 
         <div class="card">
-            <h2>7. 계정 삭제 방법</h2>
-            <p>회원 탈퇴 및 계정 삭제는 다음과 같이 진행할 수 있습니다:</p>
+            <h2>7. 계정 삭제 방법 (Google Play 요구사항 준수)</h2>
+            <p>Google Play 「계정 삭제」 요구사항(<a href="https://support.google.com/googleplay/android-developer/answer/13327111" target="_blank" style="color:#667eea;">공식 가이드</a>)에 따라 다음 경로로 계정과 데이터를 삭제할 수 있습니다:</p>
             <ul>
-                <li><strong>앱 내에서:</strong> 설정 > 회원탈퇴 버튼 클릭</li>
-                <li><strong>이메일:</strong> pung0805@gmail.com으로 탈퇴 요청</li>
+                <li><strong>앱 내 삭제 (권장):</strong> 설정 > 회원탈퇴 버튼 클릭 → 즉시 삭제</li>
+                <li><strong>웹 삭제 요청:</strong> <a href="delete-account.html" style="color:#667eea;">계정 삭제 안내 페이지</a></li>
+                <li><strong>이메일 삭제 요청:</strong> <a href="mailto:pung0805@gmail.com" style="color:#667eea;">pung0805@gmail.com</a> (영업일 기준 3일 이내 처리)</li>
             </ul>
             <p>계정 삭제 시 다음 데이터가 즉시 영구 삭제됩니다:</p>
             <ul>
